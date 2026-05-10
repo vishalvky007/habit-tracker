@@ -1,0 +1,20 @@
+{
+  "expo": {
+    "name": "Habit Tracker",
+    "slug": "habit-tracker",
+    "version": "0.1.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "automatic",
+    "assetBundlePatterns": ["**/*"],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.example.habittracker"
+    },
+    "android": {
+      "package": "com.example.habittracker"
+    },
+    "web": {
+      "favicon": "./app/src/assets/favicon.png"
+    }
+  }
+}
