@@ -41,7 +41,7 @@ export default function App() {
     <PaperProvider>
       <>
         {session ? <AppStack /> : <AuthStack />}
-      </NavigationContainer>
+      </>
     </PaperProvider>
   );
 }

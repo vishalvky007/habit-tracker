@@ -3,7 +3,8 @@
     "allow": [
       "Bash(npm install *)",
       "WebSearch",
-      "Bash(npx expo *)"
+      "Bash(npx expo *)",
+      "Bash(git commit *)"
     ]
   }
 }

@@ -1,5 +1,10 @@
 {
   "expo": {
+    "extra": {
+    "EXPO_ROUTER_IMPORT_MODE_ANDROID": "lazy",
+    "supabaseUrl": "${SUPABASE_URL}",
+    "supabaseAnonKey": "${SUPABASE_ANON_KEY}"
+  },
     "name": "Habit Tracker",
     "slug": "habit-tracker",
     "version": "0.1.0",
