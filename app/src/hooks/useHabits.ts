@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { supabase } from '../services/supabase';
-import { Session, User } from '@supabase/supabase-js';
+import type { Session, User } from '@supabase/supabase-js';
 
 export type Habit = {
   id: string;
