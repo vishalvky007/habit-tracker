@@ -1,4 +1,5 @@
 // Polyfill for missing PlatformConstants in certain RN versions (e.g., RN 0.72.x with Expo)
+export default null; // added default export to satisfy expo-router
 import { NativeModules } from 'react-native';
 
 if (!NativeModules.PlatformConstants) {

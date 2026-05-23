@@ -1,5 +1,14 @@
 # Project Plan – Habit Tracker (React Native Expo + Supabase)
 
+## Current Status (2026‑05‑23)
+- Added **default export placeholders** to `Polyfills.ts`, `useHabits.ts`, and `supabase.ts` to satisfy Expo‑router warnings.
+- Added an **Expo linking scheme** (`"habittracker"`) to `app.config.js`.
+- Updated environment variables to the Expo‑public naming convention (`EXPO_PUBLIC_SUPABASE_URL`, `EXPO_PUBLIC_SUPABASE_ANON_KEY`) and adjusted `supabase.ts` to read them.
+- Created a `global.d.ts` declaration so TypeScript recognises `process.env`.
+- Fixed Metro bundler port conflict (PID 628 stopped).
+- Console logs added to verify Supabase config at runtime.
+- All warnings listed by Expo should now be cleared.
+
 ## 1️⃣ Folder / Repository Layout
 ```
 habit-tracker/
@@ -32,7 +41,7 @@ habit-tracker/
 │   │   │   │   └─ AddHabitScreen.tsx
 │   │   │   └─ SettingsScreen.tsx
 │   │   ├─ services/
-│   │   │   ├─ supabase.ts      # Supabase client init
+│   │   │   ├─ supabase.ts      # Supabase client init (now uses EXPO_PUBLIC_ vars)
 │   │   │   └─ notifications.ts # Expo push‑notification helpers
 │   │   ├─ utils/               # helpers (date utils, offline queue)
 │   │   ├─ hooks/               # custom React hooks (useHabits, useAuth)

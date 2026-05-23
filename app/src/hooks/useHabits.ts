@@ -13,6 +13,8 @@ export type Habit = {
 };
 
 export function useHabits() {
+
+
   const [habits, setHabits] = useState<Habit[]>([]);
   const [loading, setLoading] = useState<boolean>(true);
   const [error, setError] = useState<string | null>(null);
